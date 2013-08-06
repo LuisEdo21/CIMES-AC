@@ -1,0 +1,56 @@
+@media screen and (max-width: 800px){
+  #asociados_seccion, #asociados_info, #villa_sandoval_Asoc_info, #espinoza_vega_Asoc_info, #zamora_camacho_Asoc_info, #moreno_medina_Asoc_info, #cabanillas_garcia_Asoc_info, 
+  #salazar_lindoro_Asoc_info, #quinones_galvez_Asoc_info, #orozco_del_valle_Asoc_info, #aguilar_mejia_Asoc_info, #blanco_rodriguez_Asoc_info, 
+  #zuniga_cardenas_Asoc_info, #osuna_sanchez_Asoc_info, #osako_peraza_Asoc_info, #olmeda_beltran_Asoc_info, #navarro_Asoc_info, #beltran_rea_Asoc_info,
+  #villela_beltran_Asoc_info, #sanchez_Asoc_info, #corresponsables_info, #corresponsables_seccion, #villa_sandoval_corr_info, #espinoza_vega_corr_info, #zamora_camacho_corr_info, #moreno_medina_corr_info, #cabanillas_garcia_corr_info, 
+  #salazar_lindoro_corr_info, #quinones_galvez_corr_info, #orozco_del_valle_corr_info, #aguilar_mejia_corr_info, #blanco_rodriguez_corr_info, 
+  #zuniga_cardenas_corr_info, #osuna_sanchez_corr_info, #osako_peraza_corr_info, #olmeda_beltran_corr_info, #navarro_corr_info, #beltran_rea_corr_info, #directivos_seccion_1, #directivos_seccion_2, #directivos_seccion_3, #directivos_seccion_4
+  {
+    display: block;
+    height: "auto";
+    margin: 1em 15%;
+    width: 70%;
+  }
+  #bienvenidos, #nuevo_miembro
+  {
+    display: block;
+    margin: 1em 15%;
+    width: 70%;
+  }
+  #botonera ul li a
+  {
+    font-size: 0.8em;
+    margin: 1% 1% 1% 0;
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+  }
+  #botonera ul li #inicio
+  {
+    border-radius: 0.5em;
+  }
+  #botonera ul li #contacto
+  {
+    border-radius: 0.5em;
+  }
+  #botonera_normas ul li a
+  {
+    display: block;
+    margin: 1em 15%;
+  }
+  #nuevo_miembro
+  {
+    height: 16em;
+  }
+}
+@media screen and (max-width: 480px){
+  #nuevo_miembro
+  {
+    height: 19em;
+  }
+}
+@media screen and (max-width: 320px){
+  #nuevo_miembro
+  {
+    height: 23em;
+  }
+}

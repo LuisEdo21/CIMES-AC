@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Colegio de Ingenieros Mecánicos Electricistas de Sinaloa A.C.</title>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="prefixfree.min.js"></script>
+	<script src="jquery.js"></script>
+	<script src="jscod.js"></script>
+	<script>
+		$(function(){
+			$("#desplegarform").on("click", DesplegarFormulario);
+
+			function DesplegarFormulario()
+			{
+				var cambiarCSSFormulario = 
+				{
+					height: "53.5em"
+				};
+				var cambiarCSSBoton = 
+				{
+					transform: "scale(1) rotate(180deg)"
+				};
+				$("#nuevo_miembro").css(cambiarCSSFormulario);
+				$(".icon-arrow-down:hover").css(cambiarCSSBoton);	
+				
+				$("#desplegarform").on("click", EsconderFormulario);
+
+				function EsconderFormulario()
+				{
+					var cambiarCSSFormulario0 = 
+					{
+						height: "18em"
+					};
+					var cambiarCSSBoton0 = 
+					{
+						transform: "scale(1) rotate(0deg)"
+					};
+					$("#nuevo_miembro").css(cambiarCSSFormulario0);
+					$(".icon-arrow-down:hover").css(cambiarCSSBoton0);
+					var c = 0;
+					$("#desplegarform").on("click", DesplegarFormulario);
+				}
+			}
+		});
+
+	</script>
+	<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-39646511-1']);
+		  _gaq.push(['_setDomainName', 'cimesac.org.mx']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+	</script>
+</head>
+<body>
+	<nav id="botonera">
+		<ul>
+			<li>
+				<a href="#" id="inicio">Inicio</a>
+				<a href="#" id="objetivos">Objetivos</a>
+				<a href="#" id="directivos">Directivos</a>
+				<a href="#" id="quienes_somos">¿Quiénes somos?</a>
+				<a href="#" id="corresponsables">Corresponsables</a>
+				<a href="#" id="asociados">Asociados</a>
+				<a href="#" id="normas">Normas</a>
+				<a href="#" id="contacto">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<header>
+		<hgroup>
+			<div id="logo" align="left"><img src="logo.jpg"></div>
+			<div id="titulo"><h1>Colegio de Ingenieros Mecánicos Electricistas de Sinaloa A.C.</h1></div>
+		</hgroup>
+	</header>
+	<section id="bienvenidos">
+		<article>
+			<p>Bienvenidos al sitio Web oficial del Colegio de Ingenieros Mecánicos Electricistas de Sinaloa A.C.</p>
+			<p><strong>Aquí se puede pensar en un buen mensaje de bienvenida para los visitantes de la página o alguna imagen ilustrativa.</strong></p>
+		</article>
+	</section>
+	<aside id="nuevo_miembro">
+		<article>
+			<p>¿Te interesa formar parte y obtener reconocimiento, además de grandes beneficios como miembros del CIMES?</p>
+			<p>¿Qué estás esperando? <strong>Regístrate YA!!!</strong></p>
+			<p>Nosotros nos pondremos en contacto con usted.</p>
+			<p id="instruccion_registro">(Clic para desplegar. <strong>NOTA: Por el momento el formulario se encuentra fuera de servicio</strong>)</p>
+			<div class="icon-arrow-down" id="desplegarform">&nbsp</div>
+			<form action="enviar.php" method="post">
+				<fieldset>
+				<label for='nombre'><strong>*Nombre(s): </strong></label>
+				<input type="text" id="nombre" name="nombre" size="20" placeholder="Escribe tu(s) nombre(s)" required/>
+				<label for='apellidos'><strong>*Apellidos: </strong></label>
+				<input type="text" id="apellidos" name="apellidos" size="20" placeholder="Escribe tu(s) apellido(s)" required/>
+				<label for='calle'><strong>*Calle: </strong></label>
+				<input type="text" id="calle" name="calle" size="20" placeholder="¿En qué calle vives?" required/>
+				<label for='numero'><strong>*Número exterior: </strong></label>
+				<input type="number" id="numero" name="numero" size="5" required>
+				<label for='numeroint'><strong>Número interior: </strong></label>
+				<input type="number" id="numeroint" name="numeroint" size="3">
+				<label for='colonia'><strong>*Colonia: </strong></label>
+				<input type="text" id="colonia" name="colonia" size="20" placeholder="¿En qué colonia vives?" required/>
+				<label for='ciudad'><strong>*Ciudad: </strong></label>
+				<input type="text" id="ciudad" name="ciudad" size="20" placeholder="Escribe tu ciudad" required/>
+				<label for='telefonocasa'><strong>Tel. fijo: </strong></label>
+				<input type="tel" id="telefonocasa" name="telefonocasa" size="10" />
+				<label for='celular'><strong>Celular: </strong></label>
+				<input type="tel" id="celular" name="celular" size="10" />
+				<label for='correoelectronico'><strong>*E-mail: </strong></label>
+				<input type="email" id="correoelectronico" name="correoelectronico" size="20" required/><br>
+				<input type="submit" value="Enviar datos" id="botondeenvio"/>
+				</fieldset>
+			</form>
+		</article>
+	</aside>
+	<section id="objetivos_seccion">
+		<article>
+			<ul>
+				<li>Impulsar la Ingeniería Mecánica y Eléctrica.</li>
+				<li>Unir a los Ingenieros Mecánicos y Electricistas para pugnar por su mejoramiento profesional. </li>
+				<li>Establecer y fomentar relaciones fraternales con los demás Colegios de profesionales, especialmente con los de profesiones similares o afines en el estado.</li>
+				<li>Promover la expedición y la reforma de leyes y reglamentos relativos al ejercicio profesional de la Ingeniería Mecánica y Eléctrica.</li>
+				<li>Prestar la más amplia colaboración al poder público, como cuerpo consultor en problemas de Ingeniería Mecánica y Eléctrica.</li>
+				<li>Representar a sus miembros y afiliados ante el Gobierno del Estado o los organismos que designen, para controlar y regular el ejercicio profesional.</li>
+				<li>Colaborar en la elaboración de los planes de estudios profesionales de Ingeniería Mecánica y Eléctrica.</li>
+				<li>Velar porque los puestos públicos en que se requieran conocimientos propios de Ingenieros Mecánicos Electricista sean desempeñados por técnicos de esta profesión con título legalmente expedido.</li>
+			</ul>
+		</article>
+	</section>
+	<section id="directivos_seccion_1">
+		<article>
+			<img src="sin_foto.png">
+			<p><strong>Ing. Guadalupe Jacobo Aguilar Mejía</strong></p>
+			<p>Presidente</p>
+		</article>			
+	</section>
+	<section id="directivos_seccion_2">
+		<article>
+			<img src="sin_foto.png">
+			<p><strong>Ing. Gabriel Quiñones Gálvez</strong></p>
+			<p>Vicepresidente</p>
+		</article>			
+	</section>
+	<section id="directivos_seccion_3">
+		<article>
+			<img src="sin_foto.png">
+			<p><strong>Ing. Antonio Marcelo Espinoza Vega</strong></p>
+			<p>Secretario</p>
+		</article>			
+	</section>
+	<section id="directivos_seccion_4">
+		<article>
+			<img src="sin_foto.png">
+			<p><strong>Ing. Jesús Ramón Blanco Rodríguez</strong></p>
+			<p>Tesorero</p>
+		</article>						
+	</section>
+	<section id="quienes_somos_seccion">
+		<article>
+			<p><strong>Historia</strong></p>
+			<p>El Colegio de Ingenieros Mecánicos, Electricistas del estado de Sinaloa es una Asociación Civil constituida desde 19___, que agrupa a profesionales, quienes a través de sus diferentes especialidades buscan lograr la superación social, científica y económica, poniéndose por ello al servicio de Sinaloa y de México.</p>
+		</article>
+		<article>
+			<p><strong>Misión</strong></p>
+			<p>El CIMES A.C. promueve el proceso de desarrollo de la Ingenieria mecánica Electrica al crear, desarrollar, integrar, compartir y aplicar el conocimiento de la ciencia y la tecnología en las áreas de: eléctrica, mecánica, electrónica y de la información, en beneficio de la profesión y de la sociedad Sinaloense. </p>
+		</article>
+		<article>
+			<p><strong>Visión</strong></p>
+			<p>Desarrollar la Ingeniería Mecánica-Eléctrica en Sinaloa y en México, facilitando el desarrollo profesional de sus miembros; fomentando la innovación tecnológica y promoviendo la convivencia armónica con el medio ambiente mediante el uso de energías no contaminantes. </p>
+		</article>
+	</section>
+	<section id="corresponsables_info">
+		<article>
+			<p>Para continuar seleccione el corresponsable que desea consultar</p>
+		</article>
+	</section>
+
+	<section id="villa_sandoval_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Ángel Villa Sandoval</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>290</figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-516914</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:electrovisa@hotmail.com">electrovisa@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="espinoza_vega_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Antonio Marcelo Espinoza Vega</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>428</figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-256233</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:antoniomev@hotmail.com">antoniomev@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="zamora_camacho_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Antonio Zamora Camacho</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>291</figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-820252</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:zaca68@hotmail.com">zaca68@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="moreno_medina_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Carlos Moreno Medina</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>588</figcaption>
+			<figcaption><strong>Teléfono: </strong>No disponible</figcaption>
+			<figcaption><strong>Correo electrónico: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="cabanillas_garcia_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Eliseo Cabanillas García</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>541</figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-916600</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:eliseoca@hotmail.com">eliseoca@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="salazar_lindoro_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Fernando Salazar Lindoro</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>540</figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-519901</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:ieen_electricidad@hotmail.com">ieen_electricidad@hotmail.com</a></figcaption>
+		</figure>
+	</section>				
+	<section id="quinones_galvez_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Gabriel Quiñones Gálvez</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>202</figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-517165</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:gabrielquinonez.12@hotmail.com">gabrielquinonez.12@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="orozco_del_valle_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Fidel Orozco del Valle</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>195</figcaption>
+			<figcaption><strong>Teléfono: </strong>No disponible</figcaption>
+			<figcaption><strong>Correo electrónico: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="aguilar_mejia_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Guadalupe Jacobo Aguilar Mejía</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>163</figcaption>
+			<figcaption><strong>Teléfono: </strong>6679-967912</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:gjacoboaguilar@hotmail.com">gjacoboaguilar@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="blanco_rodriguez_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Jesús Ramón Blanco Rodríguez</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>171</figcaption>
+			<figcaption><strong>Teléfonos: </strong>6677-153903<br>6671-070497</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:Jrblanco71@hotmail.com">Jrblanco71@hotmail.com</a><br><a href="mailto:jelaselectricidad@hotmail.com">jelaselectricidad@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="zuniga_cardenas_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Oscar Alonso Zúñiga Cárdenas</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>No disponible</figcaption>
+			<figcaption><strong>Teléfono: </strong>6672-100671</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:oscaralonso64@yahoo.com.mx">oscaralonso64@yahoo.com.mx</a></figcaption>
+		</figure>
+	</section>
+	<section id="osuna_sanchez_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Jaime Osuna Sánchez</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>421</figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-029633</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:jaime_osuna@hotmail.comelectrica_osako@hotmail.com">jaime_osuna@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="osako_peraza_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Oscar Manuel Osako Peraza</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>273</figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-511273</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:electrica_osako@hotmail.com">electrica_osako@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="olmeda_beltran_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Rafael Olmeda Beltrán</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>387</figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-600195</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:dci-electric@hotmail.com">dci-electric@hotmail.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="navarro_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Egeiro Navarro</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>195</figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-511597</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:egeiro.navarro@matekenergia.com">egeiro.navarro@matekenergia.com</a></figcaption>
+		</figure>
+	</section>
+	<section id="beltran_rea_corr_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Jesús Beltrán Rea</strong></figcaption>
+			<figcaption><strong>No. Corresponsable: </strong>587</figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-519779</figcaption>
+			<figcaption><strong>Correo electrónico: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+
+	<section id="corresponsables_seccion">
+		<article>
+			<p>Para más información da clic en el corresponsable que desea consultar:</p>
+			<ol>
+				<li><a href="#" id="villa_sandoval_corr">Ing. Ángel Villa Sandoval</a></li>
+				<li><a href="#" id="espinoza_vega_corr">Ing. Antonio Marcelo Espinoza Vega</a></li>
+				<li><a href="#" id="zamora_camacho_corr">Ing. Antonio Zamora Camacho</a></li>
+				<li><a href="#" id="moreno_medina_corr">Ing. Carlos Moreno Medina</a></li>
+				<li><a href="#" id="cabanillas_garcia_corr">Ing. Eliseo Cabanillas García</a></li>
+				<li><a href="#" id="salazar_lindoro_corr">Ing. Fernando Salazar Lindoro</a></li>
+				<li><a href="#" id="quinones_galvez_corr">Ing. Gabriel Quiñones Gálvez</a></li>
+				<li><a href="#" id="orozco_del_valle_corr">Ing. Fidel Orozco del Valle</a></li>
+				<li><a href="#" id="aguilar_mejia_corr">Ing. Guadalupe Jacobo Aguilar Mejía</a></li>
+				<li><a href="#" id="blanco_rodriguez_corr">Ing. Jesús Ramón Blanco Rodríguez</a></li>
+				<li><a href="#" id="zuniga_cardenas_corr">Ing. Oscar Alonso Zúñiga Cárdenas</a></li>
+				<li><a href="#" id="osuna_sanchez_corr">Ing. Jaime Osuna Sánchez</a></li>
+				<li><a href="#" id="osako_peraza_corr">Ing. Oscar Manuel Osako Peraza</a></li>
+				<li><a href="#" id="olmeda_beltran_corr">Ing. Rafael Olmeda Beltrán</a></li>
+				<li><a href="#" id="navarro_corr">Ing. Egeiro Navarro</a></li>
+				<li><a href="#" id="beltran_rea_corr">Ing. Jesús Beltrán Rea</a></li>
+			</ol>
+		</article>
+	</section>	
+
+	<section id="asociados_seccion">
+		<article>
+			<p>Para más información da clic en el asociado que desea consultar:</p>
+			<ol>
+				<li><a href="#" id="villa_sandoval_asoc">Ing. Ángel Villa Sandoval</a></li>
+				<li><a href="#" id="espinoza_vega_asoc">Ing. Antonio Marcelo Espinoza Vega</a></li>
+				<li><a href="#" id="zamora_camacho_asoc">Ing. Antonio Zamora Camacho</a></li>
+				<li><a href="#" id="moreno_medina_asoc">Ing. Carlos Moreno Medina</a></li>
+				<li><a href="#" id="cabanillas_garcia_asoc">Ing. Eliseo Cabanillas García</a></li>
+				<li><a href="#" id="salazar_lindoro_asoc">Ing. Fernando Salazar Lindoro</a></li>
+				<li><a href="#" id="quinones_galvez_asoc">Ing. Gabriel Quiñones Gálvez</a></li>
+				<li><a href="#" id="aguilar_mejia_asoc">Ing. Guadalupe Jacobo Aguilar Mejía</a></li>
+				<li><a href="#" id="blanco_rodriguez_asoc">Ing. Jesús Ramón Blanco Rodríguez</a></li>
+				<li><a href="#" id="zuniga_cardenas_asoc">Ing. Oscar Alonso Zúñiga Cárdenas</a></li>
+				<li><a href="#" id="osuna_sanchez_asoc">Ing. Jaime Osuna Sánchez</a></li>
+				<li><a href="#" id="osako_peraza_asoc">Ing. Oscar Manuel Osako Peraza</a></li>
+				<li><a href="#" id="olmeda_beltran_asoc">Ing. Rafael Olmeda Beltrán</a></li>
+				<li><a href="#" id="navarro_asoc">Ing. Egeiro Navarro</a></li>
+				<li><a href="#" id="beltran_rea_asoc">Ing. Jesús Beltrán Rea</a></li>
+				<li><a href="#" id="villela_beltran_asoc">Ing. Eduardo Villela Beltrán</a></li>
+				<li><a href="#" id="sanchez_asoc">Ing. Victoriano Sánchez</a></li>
+			</ol>
+		</article>
+	</section>
+
+	<section id="villa_sandoval_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Ángel Villa Sandoval</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-516914</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:electrovisa@hotmail.com">electrovisa@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="espinoza_vega_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Antonio Marcelo Espinoza Vega</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-256233</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:antoniomev@hotmail.com">antoniomev@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="zamora_camacho_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Antonio Zamora Camacho</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-820252</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:zaca68@hotmail.com">zaca68@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="moreno_medina_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Carlos Moreno Medina</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>No disponible</figcaption>
+			<figcaption><strong>Correo electrónico: </strong>No disponible</figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="cabanillas_garcia_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Eliseo Cabanillas García</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-916600</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:eliseoca@hotmail.com">eliseoca@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="salazar_lindoro_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Fernando Salazar Lindoro</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-519901</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:ieen_electricidad@hotmail.com">ieen_electricidad@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>				
+	<section id="quinones_galvez_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Gabriel Quiñones Gálvez</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-517165</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:gabrielquinonez.12@hotmail.com">gabrielquinonez.12@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="aguilar_mejia_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Guadalupe Jacobo Aguilar Mejía</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6679-967912</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:gjacoboaguilar@hotmail.com">gjacoboaguilar@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="blanco_rodriguez_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Jesús Ramón Blanco Rodríguez</strong></figcaption>
+			<figcaption><strong>Teléfonos: </strong>6677-153903<br>6671-070497</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:Jrblanco71@hotmail.com">Jrblanco71@hotmail.com</a><br><a href="mailto:jelaselectricidad@hotmail.com">jelaselectricidad@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="zuniga_cardenas_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Oscar Alonso Zúñiga Cárdenas</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6672-100671</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:oscaralonso64@yahoo.com.mx">oscaralonso64@yahoo.com.mx</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="osuna_sanchez_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Jaime Osuna Sánchez</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-029633</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:jaime_osuna@hotmail.comelectrica_osako@hotmail.com">jaime_osuna@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="osako_peraza_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Oscar Manuel Osako Peraza</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-511273</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:electrica_osako@hotmail.com">electrica_osako@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="olmeda_beltran_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Rafael Olmeda Beltrán</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-600195</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:dci-electric@hotmail.com">dci-electric@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="navarro_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Egeiro Navarro</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-511597</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:egeiro.navarro@matekenergia.com">egeiro.navarro@matekenergia.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="beltran_rea_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Jesús Beltrán Rea</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-519779</figcaption>
+			<figcaption><strong>Correo electrónico: </strong>No disponible</figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="villela_beltran_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Ing. Eduardo Villela Beltrán</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6671-660209</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:villelabeltran@hotmail.com">villelabeltran@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>
+	<section id="sanchez_Asoc_info">
+		<figure>
+			<img src="sin_foto.png">
+			<figcaption><strong>Victoriano Sánchez</strong></figcaption>
+			<figcaption><strong>Teléfono: </strong>6677-511798</figcaption>
+			<figcaption><strong>Correo electrónico: </strong><a href="mailto:victorianoss@hotmail.com">victorianoss@hotmail.com</a></figcaption>
+			<figcaption><strong>Página Web: </strong>No disponible</figcaption>
+		</figure>
+	</section>		
+
+	<section id="asociados_info">
+		<article>
+			<p>Para continuar seleccione el asociado que desee consultar</p>
+		</article>
+	</section>	
+	<section id="normas_seccion">
+		<article>
+			<nav id="botonera_normas">
+				<ul id="botonera_normas">
+					<li><a href="normas/NOM-001-SEDE-2012.pdf" target="_blank" class="pdf">NOM-001-SEDE-2012</a></li>
+					<li><a href="normas/NOM-001-SEDE-2005.pdf" target="_blank" class="pdf">NOM-001-SEDE-2005</a></li>
+					<li><a href="normas/NOM-007-ENER-2004.pdf" target="_blank" class="pdf">NOM-007-ENER-2004</a></li>
+					<li><a href="normas/NOM-013-ENER-2004.pdf" target="_blank" class="pdf">NOM-013-ENER-2004</a></li>
+					<li><a href="normas/PecNOM-001.pdf" target="_blank" class="pdf">PEC-NOM-001-SEDE-2005</a></li>
+					<li><a href="normas/PECNOM007dof.pdf" target="_blank" class="pdf">PEC-NOM-007-ENER-2004</a></li>
+					<li><a href="normas/PECNOM013dof.pdf" target="_blank" class="pdf">PEC-NOM-013-ENER-2004</a></li>
+					<li><a href="normas/NOM_022_STPS_2008.doc" target="_blank" class="word">NOM-022-STPS-2008</a></li>
+					<li><a href="normas/Nom-025-stps-2008.pdf" target="_blank" class="pdf">NOM-025-STPS-2008</a></li>
+					<li><a href="normas/NOM-008-SCFI-2002.pdf" target="_blank" class="pdf">NOM-008-SCFI-2002</a></li>
+				</ul>
+			</nav>
+		</article>
+	</section>
+	<section id="contacto_seccion">
+		<article>
+			<p><strong>Visítanos en:</strong></p>
+			<p>Rio Nilo #2017. Col. Lomas del Boulevard, Culiacán, Sinaloa</p>
+			<div align="center"><iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps/ms?msa=0&amp;msid=217020588220896196578.0004c38e69720544a2e85&amp;ie=UTF8&amp;t=h&amp;ll=24.788897,-107.426333&amp;spn=0.004675,0.006866&amp;z=17&amp;output=embed"></iframe><br /><small>Ver <a href="https://maps.google.com.mx/maps/ms?msa=0&amp;msid=217020588220896196578.0004c38e69720544a2e85&amp;ie=UTF8&amp;t=h&amp;ll=24.788897,-107.426333&amp;spn=0.004675,0.006866&amp;z=17&amp;source=embed" style="color:#0000FF;text-align:left">Ubicación</a> en un mapa ampliado</small>
+			</div>				
+		</article>
+	</section>
+	<footer>
+		<section id="redessociales">
+			<article>
+				Síguenos en: 
+				<a href="http://www.facebook.com/" class="icon-facebook" target="_blank"></a>
+				<a href="http://www.twitter.com/" class="icon-twitter" target="_blank"></a>
+				<a href="http://www.plus.google.com/" class="icon-google-plus" target="_blank"></a>
+			</article>
+		</section>
+	</footer>
+</body>
+</html>
